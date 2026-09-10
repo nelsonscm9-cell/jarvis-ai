@@ -1,1 +1,268 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>JARVIS</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #05070b;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .jarvis {
+            width: 100%;
+            max-width: 500px;
+            min-height: 100vh;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            letter-spacing: 8px;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            opacity: 0.6;
+            margin-bottom: 40px;
+        }
+
+        .core {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #42d9ff;
+            box-shadow:
+                0 0 20px #42d9ff,
+                0 0 60px rgba(66, 217, 255, 0.4);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 40px;
+        }
+
+        .core-inner {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #42d9ff;
+            box-shadow: 0 0 40px #42d9ff;
+        }
+
+        button {
+            border: none;
+            border-radius: 15px;
+            padding: 16px 30px;
+            font-size: 18px;
+            background: #42d9ff;
+            color: #001018;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: scale(0.96);
+        }
+
+        .response {
+            margin-top: 30px;
+            text-align: center;
+            line-height: 1.5;
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="jarvis">
+
+    <h1>J.A.R.V.I.S.</h1>
+
+    <div class="status" id="status">
+        SYSTEM ONLINE
+    </div>
+
+    <div class="core">
+        <div class="core-inner"></div>
+    </div>
+
+    <button onclick="activateJarvis()">
+        ACTIVATE
+    </button>
+
+    <div class="response" id="response">
+        Ready when you are.
+    </div>
+
+</div>
+
+<script>
+
+function activateJarvis() {
+
+    document.getElementById("status").innerText =
+        "LISTENING...";
+
+    document.getElementById("response").innerText =
+        "JARVIS is listening.";
+
+}
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JARVIS</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #05070b;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .jarvis {
+            width: 100%;
+            max-width: 500px;
+            min-height: 100vh;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            letter-spacing: 8px;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            opacity: 0.6;
+            margin-bottom: 40px;
+        }
+
+        .core {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #42d9ff;
+            box-shadow:
+                0 0 20px #42d9ff,
+                0 0 60px rgba(66, 217, 255, 0.4);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 40px;
+        }
+
+        .core-inner {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #42d9ff;
+            box-shadow: 0 0 40px #42d9ff;
+        }
+
+        button {
+            border: none;
+            border-radius: 15px;
+            padding: 16px 30px;
+            font-size: 18px;
+            background: #42d9ff;
+            color: #001018;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: scale(0.96);
+        }
+
+        .response {
+            margin-top: 30px;
+            text-align: center;
+            line-height: 1.5;
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="jarvis">
+
+    <h1>J.A.R.V.I.S.</h1>
+
+    <div class="status" id="status">
+        SYSTEM ONLINE
+    </div>
+
+    <div class="core">
+        <div class="core-inner"></div>
+    </div>
+
+    <button onclick="activateJarvis()">
+        ACTIVATE
+    </button>
+
+    <div class="response" id="response">
+        Ready when you are.
+    </div>
+
+</div>
+
+<script>
+
+function activateJarvis() {
+
+    document.getElementById("status").innerText =
+        "LISTENING...";
+
+    document.getElementById("response").innerText =
+        "JARVIS is listening.";
+
+}
+
+</script>
+
+</body>
+</html>
